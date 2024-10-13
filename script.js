@@ -7,7 +7,7 @@ const descriptionElement = document.getElementById("description");
 // Function to get weather data
 async function getWeather(city) {
 	const response = await fetch(
-		`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+		`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
 	);
 
 	const data = await response.json();
